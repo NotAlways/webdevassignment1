@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: beige;
+            margin: 0;
+        }
+        .navbar {
+        display: flex;
+        }
+        .hlink {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+            margin: 5px;
+        }
+        #homeimg {
+            height: 50px;
+        }
+        #Lucas {
+            font-size: 3em;
+            
+        }
+        nav {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 10px 0px 10px;
+        }
+        a {
+            text-decoration: none;
+            color: beige;
+        }
+        .desc {
+            text-align: center;
+            background-image: linear-gradient(rgb(155,76,76,0));
+            margin-top: 0px;
+            padding: 50px;
+        }
+        input:not(.submit) {
+            width: 100%;
+            padding: 5px 0px;
+            margin-top: 3px;
+            border: 2px solid rgb(155, 76, 76);
+            border-radius: 5px;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px 0px;
+            border: 2px solid rgb(155, 76, 76);
+            border-radius: 5px;
+        }
+        .submit {
+            color: beige;
+            background-color: rgb(155, 76, 76);
+            padding: 5px 7px;
+            border-radius: 5px;
+            border-style: none;
+        }
+        .submit:hover {
+            background-color: rgb(99, 47, 47);
+        }
+        fieldset {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="Lucas">Lucas</a>
+        <a href="tictactoe.html" id="smiley">:)     </a>
+        <a href="index.html"><img src="new jeans ♡.jpg" id="homeimg"/></a>
+    </nav>
+    <div class="desc">
+        <h1>Track K-dramas</h1>
+        <img src="fig01_2.png"/>
+        <h4>Need to stay up to date?</h4>
+        <p>Organize and track completed titles below.</p>
+    </div>
+    <form action="response.html" method="get">
+        <fieldset>
+            <label for="kdrama">Name of K-drama :</label>
+            <input list="kdramas" name="kdrama" required/>
+            <datalist id="kdramas">
+                <option value="All of Us are Dead" class="value"></option>
+                <option value="Alchemy of Souls" class="value"></option>
+                <option value="Bad Prosecutor" class="value"></option>
+                <option value="Black Out" class="value"></option>
+                <option value="Business Proposal" class="value"></option>
+                <option value="Connection" class="value"></option>
+                <option value="Crash Landing on You" class="value"></option>
+                <option value="Descendants of the Sun" class="value"></option>
+                <option value="Divorce attorney Shin" class="value"></option>
+                <option value="Doona!" class="value"></option>
+                <option value="Dr. Romantic" class="value"></option>
+                <option value="Hierarchy" class="value"></option>
+                <option value="Hospital Playlist" class="value"></option>
+                <option value="Itaewon Class" class="value"></option>
+                <option value="Love Next Door" class="value"></option>
+                <option value="Mask Girl" class="value"></option>
+                <option value="Miss Night and Day" class="value"></option>
+                <option value="My Demon" class="value"></option>
+                <option value="My Perfect Stranger" class="value"></option>
+                <option value="Oh My Venus" class="value"></option>
+                <option value="Prison Playbook" class="value"></option>
+                <option value="Pyramid Game" class="value"></option>
+                <option value="Queen of Tears" class="value"></option>
+                <option value="Queen of Masks" class="value"></option>
+                <option value="Squid Game" class="value"></option>
+                <option value="Start-Up" class="value"></option>
+                <option value="Sweet Home" class="value"></option>
+                <option value="The Killer's Shopping List" class="value"></option>
+                <option value="The Uncanny Counter" class="value"></option>
+                <option value="Thirty-Nine" class="value"></option>
+                <option value="Vincenzo" class="value"></option>
+                <option value="What Comes After Love" class="value"></option>
+                <option value="Wongyeong" class="value"></option>
+                <option value="Zombie Detective" class="value"></option>
+            </datalist>
+            <br/><br/>
+            <label for="number">Rating (1-5) :</label>
+            <input type="number" name="number" min="1" max="5" required/>
+            <br/><br/>
+            <label for="date">Date of completion :</label>
+            <input type="date" name="date" required/>
+            <br/>
+            <p><label for="comments">Additional remarks :</label></p>
+            <textarea name="comments" id="comments" rows="4" cols="50" placeholder="Thoughts on the show?"></textarea>
+            <br/><br/>
+            <input type="submit" value="Submit" class="submit"/>
+        </fieldset>
+    </form>
+</body>
+</html>

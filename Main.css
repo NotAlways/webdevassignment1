@@ -1,0 +1,62 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+}
+.hlink {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    margin: 5px;
+}
+#homeimg {
+    height: 50px;
+}
+#smiley {
+
+}
+#Lucas {
+    font-size: 3em;
+    
+}
+nav {
+    margin-bottom: 30px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+}
+a {
+    text-decoration: none;
+    color: beige;
+}
+.pagelinks {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#nyplink {
+    background-color: rgb(155, 76, 76);
+    margin: 20px;
+    text-align: center;
+}
+#kdramalink {
+    background-color: rgb(155, 76, 76);
+    margin: 20px;
+    text-align: center;
+}
+#tictactoelink {
+    background-color: rgb(155, 76, 76);
+    margin: 20px;
+    text-align: center;
+}
+.preview {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}

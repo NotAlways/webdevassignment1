@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kdrama Response</title>
+    <style>
+        .blank {
+            font-weight: bold;
+        }
+        body {
+            text-align: center;
+            background-color: beige;
+            font-family: Roboto, Helvetica;
+        }
+        a {
+            text-decoration: none;
+            color: beige;
+            background-color: rgb(155, 76, 76);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: rgb(99, 47, 47);
+        }
+    </style>
+</head>
+<body>
+    <h1>Successfully submitted!</h1>
+    <p>
+        Responses:<br/><br/>
+        <span id="show" class="blank"></span><br/><br/>
+        <span id="rate" class="blank"></span>★/5★<br/><br/>
+        <span id="cdate" class="blank"></span><br/><br/>
+        Remarks: <span id="remarks" class="blank"></span><br/><br/>
+    </p>
+    <a href="kdrama.html">Submit another response?</a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const show = urlParams.get("kdrama");
+            const rate = urlParams.get('number');
+            const cdate = urlParams.get('date');
+            const remarks = urlParams.get('comments');
+
+            document.getElementById('show').textContent = show;
+            document.getElementById('rate').textContent = rate;
+            document.getElementById('cdate').textContent = cdate;
+            document.getElementById("remarks").textContent = remarks;
+        });
+    </script>
+</body>
+</html>
