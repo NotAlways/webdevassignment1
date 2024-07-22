@@ -1,0 +1,68 @@
+body {
+    text-align: center;
+    background-image: url(Inkedbc191429-87db-436b-89ea-8261293d0d03_LI.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    background-color: beige;
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 5px 10px 5px;
+    border-radius: 2em;
+    padding-top: 2em
+}
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 1px;
+    cursor: pointer;
+    background-color: black;
+    font-size: 270%;
+    color: white;
+}
+.box:hover {
+    background-color: rgb(80, 35, 35);
+}
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 150px;
+    margin: 120px;
+}
+#restart {
+    background-color: rgb(155, 76, 76);
+    border-radius: 5px;
+    border-width: 0;
+    margin-bottom: 2em;
+    padding: 5px 5px;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px;
+    cursor: pointer;
+    font-size: larger;
+    color: beige;
+}
+#restart:hover {
+    background-color: rgb(80, 35, 35);
+}
+.desc {
+    margin-top: 50px;
+    margin-bottom: -50px;
+}
+#cMessage {
+    margin-top: -70px;
+    margin-bottom: 50px;
+}
+a {
+    text-decoration: none;
+    background-color: rgb(155, 76, 76);
+    color: beige;
+    padding: 5px;
+    border-radius: 5px;
+}
+a:hover {
+    background-color: rgb(80, 35, 35);
+}

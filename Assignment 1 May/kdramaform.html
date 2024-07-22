@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Review submitted</h1>
+	<p>
+		Responses:<br/>
+		<span id="show" class="blank"></span><br/>
+		Rating: <span id="rate" class="blank"></span><br/>
+		<span id="cdate" class="blank"></span><br/>
+		<span id="remarks" class="blank"></span>
+		<a href="kdrama.html">Submit another response?</a>
+	</p>
+    <script>
+        var formData = location.search;
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+	formData = formData.replace("+", " ");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+var para=new Array();
+var show,color,gender;
+        for (var i=0; i < formArray.length; ++i) {
+	
+	para=formArray[i].split("=");
+	
+	switch (para[0]) {
+		case "bdate": //d=para[1].split("-");
+					  //document.getElementById("bdate").innerHTML=d[2]+"/"+d[1]+"/"+d[0];
+					  dd=new Date(para[1]);
+					  document.getElementById("bdate").innerHTML=dd.toDateString();
+					  break;
+	    case "show": document.getElementById("show").innerHTML=para[1];
+					show=para[1];
+					break;
+		case "gender":
+					document.getElementById("gender").innerHTML=para[1];
+					gender=para[1];
+					break;
+		case "color": 
+					color=para[1];
+					break;
+		case "diploma":	
+					document.getElementById("diploma").innerHTML=para[1];
+					break;
+		case "activity":
+					document.getElementById("activity").innerHTML=para[1];
+					break;
+		case "location":
+					document.getElementById("location").innerHTML=para[1];
+					break;
+		case "contact":
+					document.getElementById("contact").innerHTML=para[1];
+					break;
+		case "email":
+					document.getElementById("email").innerHTML=para[1];
+					break;
+		case "website":
+					document.getElementById("website").innerHTML=para[1];
+					break;
+	
+    }
+	
+}
+setGender();
+setColor(color);
+
+
+    </script>
+</body>
+</html>

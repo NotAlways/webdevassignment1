@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="tictactoe.css" rel='stylesheet'/>
+</head>
+<body>
+    <div class="container">
+        <h1 id="header">TIC TAC TOE</h1>
+        <p class="desc">basic tictactoe from scratch<br/><br/><a href="index.html">Back to Home</a></p>
+        <div class="game">
+            <div id="1" class="box" onclick="playerClick1();"></div>
+            <div id="2" class="box" onclick="playerClick2();"></div>
+            <div id="3" class="box" onclick="playerClick3();"></div>
+            <div id="4" class="box" onclick="playerClick4();"></div>
+            <div id="5" class="box" onclick="playerClick5();"></div>
+            <div id="6" class="box" onclick="playerClick6();"></div>
+            <div id="7" class="box" onclick="playerClick7();"></div>
+            <div id="8" class="box" onclick="playerClick8();"></div>
+            <div id="9" class="box" onclick="playerClick9();"></div>
+        </div>
+        <h3 id="cMessage">X's turn</h3>
+        <button id="restart" onclick="gameReset()">Restart</button>
+        <script src="tictactoev2.js"></script>
+    </div>
+</body>
+</html>
