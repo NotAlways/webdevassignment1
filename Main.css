@@ -15,9 +15,6 @@ body {
 #homeimg {
     height: 50px;
 }
-#smiley {
-
-}
 #Lucas {
     font-size: 3em;
     
@@ -29,6 +26,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0px 10px 0px 10px;
+    top: 0;
+    position: sticky;
 }
 a {
     text-decoration: none;
@@ -36,8 +35,12 @@ a {
 }
 .pagelinks {
     width: 600px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+}
+@media only screen and (maxwidth: 500px) {
+
 }
 #nyplink {
     background-color: rgb(155, 76, 76);
