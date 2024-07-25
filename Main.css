@@ -9,8 +9,8 @@ body {
 .hlink {
     color: white;
     text-decoration: none;
-    padding: 1em;
     margin: 5px;
+    font-size: larger;
 }
 #homeimg {
     height: 50px;
@@ -32,6 +32,7 @@ nav {
 a {
     text-decoration: none;
     color: beige;
+    font-weight: bold;
 }
 .pagelinks {
     width: 600px;
@@ -39,27 +40,62 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-@media only screen and (maxwidth: 500px) {
-
-}
 #nyplink {
     background-color: rgb(155, 76, 76);
     margin: 20px;
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 #kdramalink {
     background-color: rgb(155, 76, 76);
     margin: 20px;
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 #tictactoelink {
     background-color: rgb(155, 76, 76);
     margin: 20px;
     text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 .preview {
     width: 500px;
     height: 300px;
+    padding-top: 20px;
     object-fit: cover;
     object-position: top;
+}
+@media screen and (max-width: 600px) {
+    .pagelinks {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #nyplink {
+        background-color: rgb(155, 76, 76);
+        margin: 20px;
+        text-align: center;
+    }
+    #kdramalink {
+        background-color: rgb(155, 76, 76);
+        margin: 20px;
+        text-align: center;
+    }
+    #tictactoelink {
+        background-color: rgb(155, 76, 76);
+        margin: 20px;
+        text-align: center;
+    }
+    .preview {
+        width: 90%;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+    }
 }
